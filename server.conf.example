@@ -1,0 +1,20 @@
+:value
+port = 5000
+
+:clients
+localhost:senha_do_fulano
+ciclano:senha_do_ciclano
+zzz:abczzz123
+
+:rules
+# http proxy
+# para http a porta pode ser 0 e gerar aleatoriamente (etre 5.000 e 20.000)
+# Porta ->  Cliente    : IP Interno       / Porta Interna   # ServiceName
+0       ->  localhost     : 192.168.25.254   / 80              # front-fulano
+0       ->  localhost     : 127.0.0.1        / 3000            # api-fulano
+0       ->  localhost     : 192.168.25.254   / 80              # front-fulano2
+
+# portas TCP
+# para tcp a porta deve ser informada (etre 40.000 e 50.000)
+# Porta ->  Cliente    : IP Interno       / Porta Interna   # ServiceName
+40001  ->  localhost    : 192.168.0.123   /3050                 # firebirdA
