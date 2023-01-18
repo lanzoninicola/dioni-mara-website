@@ -44,14 +44,54 @@ module.exports = {
       },
     },
     fontFamily: {
-      body: ["Mulish", "sans-serif"],
-      titles: ["DM Serif Display", "serif"],
-      sans: ["DM Serif Display", "sans-serif"],
+      body: ["Satoshi Variable", "sans-serif"],
+      titles: ["Satoshi Variable", "serif"],
+      sans: ["Satoshi Variable", "sans-serif"],
     },
     backgroundImage: {
-      "massage-preface":
-        "url('/assets/images/sala-massagens-dioni-mara-1.webp')",
-      massage: "url('/assets/images/dioni-mara-executa-massagem.webp')",
+      "hero-image": "url('/assets/images/hero-image.webp')",
+      "hero-radial-gradient":
+        "radial-gradient(46.21% 47.88% at 52.81% 66.82%, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.52) 46.88%)",
+    },
+    keyframes: {
+      float: {
+        "0%": {
+          // boxShadow: "0 5px 15px 0px rgba(0,0,0,0.6)",
+          transform: "translatey(0px)",
+        },
+        "50%": {
+          // boxShadow: "0 25px 15px 0px rgba(0,0,0,0.2)",
+          transform: "translatey(-20px)",
+        },
+        "100%": {
+          // boxShadow: "0 5px 15px 0px rgba(0,0,0,0.6)",
+          transform: "translatey(0px)",
+        },
+      },
+      fadeIn: {
+        "0%": {
+          opacity: "0",
+        },
+        "100%": {
+          opacity: "1",
+        },
+      },
+      pulse: {
+        "0%": {
+          transform: "scale(1)",
+        },
+        "50%": {
+          transform: "scale(1.1)",
+        },
+        "100%": {
+          transform: "scale(1)",
+        },
+      },
+    },
+    animation: {
+      float: "float 6s ease-in-out infinite",
+      fadeIn: "fadeIn 1s ease-in-out",
+      pulse: "pulse 1s ease-in-out infinite",
     },
   },
   plugins: [require("flowbite/plugin"), require("@tailwindcss/aspect-ratio")],
