@@ -8,7 +8,6 @@ import {
 } from "@remix-run/react";
 
 import styles from "./styles/tailwind.css";
-import cabinet from "../styles/cabinet.css";
 
 import type { LinksFunction, MetaFunction } from "@remix-run/node";
 export const links: LinksFunction = () => [
@@ -25,8 +24,6 @@ export const links: LinksFunction = () => [
   //   rel: "stylesheet",
   //   href: "https://fonts.googleapis.com/css2?family=DM Serif Display:wght@400;600;700;800;900&display=swap",
   // },
-
-  { rel: "stylesheet", href: cabinet },
 ];
 
 export const meta: MetaFunction = () => ({
