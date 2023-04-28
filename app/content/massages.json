@@ -1,10 +1,29 @@
 [
     {
-        "imageURL": "",
+        "id": 1,
+        "imageUrl": "https://res.cloudinary.com/cloudnila/image/upload/v1682640998/dioni-mara-website/massagens/massagem-modeladora.png",
         "name": "Massagem Modeladora",
         "shortDescription": "A massagem modeladora é uma técnica que utiliza movimentos precisos e pressão para moldar e tonificar os músculos do corpo.",
         "longDescription": "",
         "duration": "60",
-        "wappRequiredInfoMessage": "Olá, gostaria agendar uma Massagem Modeladora, está disponível?"
+        "wapp": {
+            "info": "Olá, gostaria ter mais informações sobre a Massagem Modeladora. <Faça sua pergunta>",
+            "schedule": "Olá, gostaria agendar uma Massagem Modeladora, está disponível?"
+        }
+    },
+    {
+        "id": 2,
+        "imageUrl": "",
+        "name": "Massagem Relaxante",
+        "shortDescription": "A massagem modeladora é uma técnica que utiliza movimentos precisos e pressão para moldar e tonificar os músculos do corpo.",
+        "longDescription": "",
+        "duration": [
+            "60",
+            "90"
+        ],
+        "wapp": {
+            "info": "Olá, gostaria ter mais informações sobre a Massagem Relaxante. <Faça sua pergunta>",
+            "schedule": "Olá, gostaria agendar uma Massagem Relaxante, está disponível?"
+        }
     }
 ]
