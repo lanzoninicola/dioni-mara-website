@@ -34,6 +34,9 @@ function BackgroundHomeImage() {
 }
 
 
+// TODO: Deals inside the loader
+// TODO: Check the validation of the deals
+
 function GridDealBoxes() {
   return <div className="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-6">
     {deals.map((deal, index) => <DealBox key={index} imageUrl={deal.thumbnailImageURL} title={deal.title} discount={deal.discount} />)}
