@@ -17,7 +17,7 @@ export default function ServiceBox({ imageUrl, name, shortDescription, infoMessa
             <div>
                 <div className="mb-8">
                     <h2 className="text-xl font-bold">{name}</h2>
-                    <p>{shortDescription}</p>
+                    <p className="text-lg">{shortDescription}</p>
                 </div>
                 <div className="flex justify-between md:justify-end items-center">
                     {infoMessage && <WhatsappExternalLink ariaLabel="Saiba mais" message={infoMessage} style="border-4 border-sky-500 rounded-full py-4 px-6 font-bold md:mr-4">Saiba mais</WhatsappExternalLink>}

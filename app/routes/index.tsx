@@ -16,7 +16,7 @@ export default function Index() {
       <div className="flex flex-col gap-4 md:gap-8 mb-16">
         <ButtonLinkSpotted label="Agende um horário" to="#" />
         <ButtonLink label="Massagens" to="/massagens" />
-        <ButtonLink label="Terapias Holísticas" to="#" />
+        <ButtonLink label="Terapias Holísticas" to="/terapias-holisticas" />
         <ButtonLink label="Yoga" to="#" />
         <ButtonLink label="Tour da sala" to="#" />
         <ButtonLink label="Quem é Dioni Mara" to="#" />

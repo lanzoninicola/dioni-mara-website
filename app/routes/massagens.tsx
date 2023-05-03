@@ -4,14 +4,9 @@ import massages from "../content/massages.json"
 import ServiceBox from "~/client/components/service-box/service-box";
 import { MetaFunction, json } from "@remix-run/node";
 import { useLoaderData } from "@remix-run/react";
+import { ServiceUI } from "~/client/types";
 
-interface Massage {
-  id: number,
-  name: string,
-  imageUrl: string,
-  shortDescription: string,
-  duration: number | number[],
-}
+
 
 export const meta: MetaFunction = () => ({
   charset: "utf-8",
@@ -22,36 +17,39 @@ export const meta: MetaFunction = () => ({
 
 export function loader() {
 
-  // TODO: Move the infoMessage and scheduleMessage here
+  const massagesUI = massages.map(t => {
+    return {
+      ...t,
+      infoMessage: `Olá, gostaria de saber mais sobre a terapia ${t.name}. <Faça sua pergunta>`,
+      bookingMessage: `Olá, gostaria de agendar uma terapia ${t.name}.`
+    }
+  })
 
-  return json(massages)
+  return json(massagesUI)
 }
 
 
 // TODO: implement a sort order to spotlight some services
 // TODO: add an explanation of preparation and aftercare
 export default function ServicosMassagens() {
-  const massages: Massage[] = useLoaderData();
+  const massages: ServiceUI[] = useLoaderData();
 
   return <Main>
     <Container>
       <h1 className="font-bold text-4xl mb-8">Massagens</h1>
-      <p>As terapias manuais aplicadas são personalizadas para ajudar a administrar o estresse e a dor crônica. Descubra como posso ajudar a relaxar seu corpo e sua mente.</p>
+      <p className="md:text-xl">As terapias manuais aplicadas são personalizadas para ajudar a administrar o estresse e a dor crônica. Descubra como posso ajudar a relaxar seu corpo e sua mente.</p>
     </Container>
     <Container>
       <div className="flex flex-col gap-4 lg:gap-8 mt-8">
         {massages.map((massage) => {
-
-          const infoMessage = `Olá, gostaria de saber mais sobre a massagem ${massage.name}. <Faça sua pergunta>`
-          const scheduleMessage = `Olá, gostaria de agendar uma massagem ${massage.name}.`
 
           return <ServiceBox
             key={massage.id}
             name={massage.name}
             imageUrl={massage.imageUrl}
             shortDescription={massage.shortDescription}
-            infoMessage={infoMessage}
-            scheduleMessage={scheduleMessage}
+            infoMessage={massage.infoMessage}
+            scheduleMessage={massage.bookingMessage}
           />
         })}
 
