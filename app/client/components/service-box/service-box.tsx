@@ -2,7 +2,7 @@ import WhatsappExternalLink from "../whatsapp-external-link/whatsapp-external-li
 
 
 interface ServiceBoxProps {
-    imageUrl: string;
+    imageUrl?: string;
     name: string;
     shortDescription: string;
     duration?: number | number[];
@@ -13,7 +13,7 @@ interface ServiceBoxProps {
 export default function ServiceBox({ imageUrl, name, shortDescription, infoMessage, scheduleMessage }: ServiceBoxProps) {
     return <div className="bg-violet-200 rounded-xl py-6 px-4">
         <div className="flex flex-col md:flex-row md:gap-4">
-            <div className="h-52 md:h-64 md:min-w-[10rem] bg-cover bg-center mb-4 rounded-md" style={{ backgroundImage: `url(${imageUrl})` }}></div>
+            {imageUrl && <div className="h-52 md:h-64 md:min-w-[10rem] bg-cover bg-center mb-4 rounded-md" style={{ backgroundImage: `url(${imageUrl})` }}></div>}
             <div>
                 <div className="mb-8">
                     <h2 className="text-xl font-bold">{name}</h2>

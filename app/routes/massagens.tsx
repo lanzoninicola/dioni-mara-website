@@ -4,7 +4,7 @@ import massages from "../content/massages.json"
 import ServiceBox from "~/client/components/service-box/service-box";
 import { MetaFunction, json } from "@remix-run/node";
 import { useLoaderData } from "@remix-run/react";
-import { ServiceUI } from "~/client/types";
+import { ServiceUI } from "~/types";
 
 
 
