@@ -34,7 +34,7 @@ export function loader() {
 export default function ServicosMassagens() {
   const massages: ServiceUI[] = useLoaderData();
 
-  return <Main>
+  return <>
     <Container>
       <h1 className="font-bold text-4xl mb-8">Massagens</h1>
       <p className="md:text-xl">As terapias manuais aplicadas são personalizadas para ajudar a administrar o estresse e a dor crônica. Descubra como posso ajudar a relaxar seu corpo e sua mente.</p>
@@ -56,5 +56,5 @@ export default function ServicosMassagens() {
       </div>
 
     </Container>
-  </Main>
+  </>
 }

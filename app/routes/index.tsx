@@ -1,8 +1,6 @@
-import LogoWhite from "~/client/components/logos/logo-white/logo-white";
 import { ButtonLink, ButtonLinkSpotted } from "~/client/components/primitives/button-link/button-link";
 import deals from "../content/deals.json"
 import Container from "~/client/components/layout/container/container";
-import Main from "~/client/components/layout/main/main";
 import { useLoaderData } from "@remix-run/react";
 import Deals from "~/client/components/deals/deals";
 import { Deal, DealUI } from "~/types";
@@ -26,13 +24,7 @@ export function loader() {
 export default function Index() {
   const deals: Deal[] = useLoaderData();
 
-  return <Main>
-    <BackgroundHomeImage />
-    <Container>
-      <header className="mb-8">
-        <LogoWhite />
-      </header>
-    </Container>
+  return <>
     <Container>
       <div className="flex flex-col gap-4 md:gap-8 mb-16">
         <ButtonLinkSpotted label="Agende um horário" to="#" />
@@ -44,7 +36,7 @@ export default function Index() {
       </div>
     </Container>
     <Deals deals={deals} />
-  </Main>
+  </>
 }
 
 function BackgroundHomeImage() {

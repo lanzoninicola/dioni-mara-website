@@ -32,7 +32,7 @@ export function loader() {
 export default function ServicosTerapiasHolisticas() {
     const therapies: ServiceUI[] = useLoaderData();
 
-    return <Main>
+    return <>
         <Container>
             <h1 className="font-bold text-4xl mb-8">Terapias Holísticas</h1>
             <p className="md:text-xl">A terapia holística aborda a pessoa como um todo, considerando não apenas os sintomas físicos, mas também as emoções, a mente e o espírito. Ela busca equilibrar e harmonizar esses aspectos para promover a saúde e o bem-estar de forma integral.</p>
@@ -53,5 +53,5 @@ export default function ServicosTerapiasHolisticas() {
             </div>
 
         </Container>
-    </Main>
+    </>
 }

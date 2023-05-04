@@ -10,6 +10,8 @@ import {
 import styles from "./styles/tailwind.css";
 
 import type { LinksFunction, MetaFunction } from "@remix-run/node";
+import Header from "./client/components/header/header";
+import Main from "./client/components/layout/main/main";
 export const links: LinksFunction = () => [
   { rel: "stylesheet", href: styles },
   // {
@@ -34,16 +36,20 @@ export const meta: MetaFunction = () => ({
 
 export default function App() {
   return (
-    <html lang="en">
+    <html lang="pt-br">
       <head>
         <Meta />
         <Links />
       </head>
       <body>
-        <Outlet />
+        <Main>
+          <Header />
+          <Outlet />
+        </Main>
         <ScrollRestoration />
         <Scripts />
         <LiveReload />
+
       </body>
     </html>
   );

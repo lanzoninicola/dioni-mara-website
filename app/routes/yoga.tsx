@@ -32,7 +32,7 @@ export function loader() {
 export default function ServicosYoga() {
     const yoga: ServiceUI[] = useLoaderData();
 
-    return <Main>
+    return <>
         <Container>
             <h1 className="font-bold text-4xl mb-8">Yoga</h1>
             <p className="md:text-xl">Ofereço a prática de yoga para promover o bem-estar físico e mental, por meio da melhoria da flexibilidade, força, equilíbrio e concentração. Buscamos desenvolver a consciência corporal e emocional, visando uma vida mais saudável e equilibrada.</p>
@@ -53,5 +53,5 @@ export default function ServicosYoga() {
             </div>
 
         </Container>
-    </Main>
+    </>
 }
