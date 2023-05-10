@@ -2,12 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base {
-  @font-face {
-    font-family: "Satoshi";
-    src: url("../public/assets/fonts/Satoshi-Variable.ttf");
-  }
+/* @layer base { */
+@font-face {
+  font-family: "Satoshi";
+  src: url("/assets/fonts/Satoshi-Variable.woff2") format("woff2"),
+    url("/assets/fonts/Satoshi-Variable.woff") format("woff");
 }
+/* } */
 
 @layer components {
   .button-animate {

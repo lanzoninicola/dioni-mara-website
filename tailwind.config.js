@@ -1,4 +1,6 @@
 /** @type {import('tailwindcss').Config} */
+const defaultTheme = require('tailwindcss/defaultTheme')
+
 module.exports = {
   content: [
     "./app/**/*.{js,ts,jsx,tsx}",
@@ -44,9 +46,9 @@ module.exports = {
       },
     },
     fontFamily: {
-      body: ["Satoshi Variable", "sans-serif"],
-      titles: ["Satoshi Variable", "serif"],
-      sans: ["Satoshi Variable", "sans-serif"],
+      body: ["Satoshi", ...defaultTheme.fontFamily.sans],
+      titles: ["Satoshi", ...defaultTheme.fontFamily.sans],
+      sans: ["Satoshi", ...defaultTheme.fontFamily.sans],
     },
     backgroundImage: {
       "hero-image": "url('/assets/images/hero-image.webp')",

@@ -7,32 +7,63 @@ import {
   ScrollRestoration,
 } from "@remix-run/react";
 
-import styles from "./styles/tailwind.css";
+import tailwindStyles from './styles/tailwind.css'
 
 import type { LinksFunction, MetaFunction } from "@remix-run/node";
 import Header from "./client/components/header/header";
 import Main from "./client/components/layout/main/main";
+
+
 export const links: LinksFunction = () => [
-  { rel: "stylesheet", href: styles },
-  // {
-  //   rel: "preconnect",
-  //   href: "https://fonts.googleapis.com",
-  // },
-  // {
-  //   rel: "preconnect",
-  //   href: "https://fonts.gstatic.com",
-  // },
-  // {
-  //   rel: "stylesheet",
-  //   href: "https://fonts.googleapis.com/css2?family=DM Serif Display:wght@400;600;700;800;900&display=swap",
-  // },
+  {
+    rel: 'preload',
+    as: 'font',
+    href: '/assets/fonts/Satoshi-Variable.woff2',
+    type: 'font/woff2',
+    crossOrigin: 'anonymous',
+  },
+  { rel: 'stylesheet', href: tailwindStyles },
+  {
+    rel: "apple-touch-icon",
+    sizes: "180x180",
+    href: "/assets/favicons/apple-touch-icon.png",
+  },
+  {
+    rel: "icon",
+    type: "image/png",
+    sizes: "32x32",
+    href: "/assets/favicons/favicon-32x32.png",
+  },
+
+  {
+    rel: "icon",
+    type: "image/png",
+    sizes: "16x16",
+    href: "/assets/favicons/favicon-16x16.png",
+  },
+  {
+    rel: "manifest",
+    href: "/assets/favicons/site.webmanifest",
+  },
+  {
+    rel: "mask-icon",
+    href: "/assets/favicons/safari-pinned-tab.svg",
+    color: "#5bbad5",
+  }
 ];
 
-export const meta: MetaFunction = () => ({
-  charset: "utf-8",
-  title: "Dioni Mara Yoga & Terapias",
-  viewport: "width=device-width,initial-scale=1",
-});
+
+
+export const meta: MetaFunction = () => {
+  return {
+    charset: "utf-8",
+    title: "Dioni Mara Yoga & Terapias",
+    viewport: "width=device-width,initial-scale=1",
+    description: "Dioni Mara Yoga & Terapias",
+    keywords: "yoga, terapias, massagem, reiki, meditação, yoga em casa, yoga online, yoga em grupo, yoga em empresas, yoga em escolas, yoga em academias, yoga em condomínios, yoga"
+  }
+}
+
 
 export default function App() {
   return (
