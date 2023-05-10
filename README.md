@@ -1,38 +1,21 @@
-# Remix 1.7.5 starter with ExpressJS adapter (Typescript support)!
-
-- [Remix Docs](https://remix.run/docs)
+# Website for dionimarayogaeterapias.com.br
 
 ## TODO
 
+- [ ] SEO improvements
+- [ ] Add customers testimonials
+- [ ] Add page with the photos of studio
+- [ ] Add about page
+- [ ] Improve single service page
+- [ ] Add Error Boundaries (see example: https://github.com/kentcdodds/kentcdodds.com/blob/2f6a080a2e736bafe353a7df6bb29452e8db0a15/app/root.tsx#LL555C10-L555C18 )
+- [ ] Track the website navigation
+- [ ] Add heatmap
 - [ ] Dockerize the app
+- [ ] Cloudflare for DNS and CDN
+- [ ] Add a blog
+- [ ] From my social section (show the last 3 posts from instagram)
 
-## Development
+## Nice to have but not necessary
 
-From your terminal:
-
-```sh
-npm run dev
-```
-
-This will start the Express server at port 3000. It will automatically reload your browser when you make changes to your code.
-
-### Note:
-
-Sometimes after executing `npm run dev` you may see an error like `Error: Cannot find module 'server.js'`.
-To fix this, run `npm run build:server` and then `npm run dev` again.
-
-## Deployment
-
-First, build your app for production:
-
-```sh
-npm run build
-```
-
-Then run the app in production mode:
-
-```sh
-npm start
-```
-
-Now you'll need to pick a host to deploy it to.
+- [ ] Add a chatbot
+- [ ] Add a booking system
