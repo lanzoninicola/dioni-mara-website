@@ -7,7 +7,7 @@ import {
   ScrollRestoration,
 } from "@remix-run/react";
 
-import tailwindStyles from './styles/tailwind.css'
+import tailwindStyles from "./styles/tailwind.css"
 
 import type { LinksFunction, MetaFunction } from "@remix-run/node";
 import Header from "./client/components/header/header";
@@ -16,13 +16,20 @@ import Main from "./client/components/layout/main/main";
 
 export const links: LinksFunction = () => [
   {
-    rel: 'preload',
-    as: 'font',
-    href: '/assets/fonts/Satoshi-Variable.woff2',
-    type: 'font/woff2',
-    crossOrigin: 'anonymous',
+    rel: "preload",
+    as: "font",
+    href: "/assets/fonts/Satoshi-Regular.woff2",
+    type: "font/woff2",
+    crossOrigin: "anonymous",
   },
-  { rel: 'stylesheet', href: tailwindStyles },
+  {
+    rel: "preload",
+    as: "font",
+    href: "/assets/fonts/Satoshi-Bold.woff2",
+    type: "font/woff2",
+    crossOrigin: "anonymous",
+  },
+  { rel: "stylesheet", href: tailwindStyles },
   {
     rel: "apple-touch-icon",
     sizes: "180x180",
@@ -72,7 +79,7 @@ export default function App() {
         <Meta />
         <Links />
       </head>
-      <body>
+      <body style={{ textRendering: "optimizeLegibility" }}>
         <Main>
           <Header />
           <Outlet />
