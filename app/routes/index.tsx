@@ -5,6 +5,7 @@ import { useLoaderData } from "@remix-run/react";
 import Deals from "~/client/components/deals/deals";
 import { Deal, DealUI } from "~/types";
 import { json } from "@remix-run/node";
+import WhatsappExternalLink from "~/client/components/whatsapp-external-link/whatsapp-external-link";
 
 export function loader() {
 
@@ -22,12 +23,12 @@ export function loader() {
 }
 
 export default function Index() {
-  const deals: Deal[] = useLoaderData();
+  const deals: DealUI[] = useLoaderData();
 
   return <>
     <Container>
       <div className="flex flex-col gap-4 md:gap-8 mb-16">
-        <ButtonLinkSpotted label="Agende um horário" to="#" />
+        <WhatsappExternalLink ariaLabel="Agendar um hórario" message={"Olá, gostaria agendar um hóraria para <indicar o serviço>"} style={"flex text-white justify-center rounded-full bg-sky-700 py-5 px-8 font-semibold shadow-md hover:bg-sky-600 hover:text-white transition-colors duration-300"}>Agendar um hórario</WhatsappExternalLink>
         <ButtonLink label="Massagens" to="/massagens" />
         <ButtonLink label="Terapias Holísticas" to="/terapias-holisticas" />
         <ButtonLink label="Yoga" to="/yoga" />
@@ -40,5 +41,5 @@ export default function Index() {
 }
 
 function BackgroundHomeImage() {
-  return <div className="absolute top-0 left-0 md:inset-0 bg-cover bg-left-bottom lg:bg-cover lg:bg-right-top bg-no-repeat opacity-80 -z-10" style={{ backgroundImage: "url('https://res.cloudinary.com/cloudnila/image/upload/v1682558715/dioni-mara-website/home-bg.png')" }}></div>
+  return <div className="absolute top-0 left-0 md:inset-0 bg-cover bg-left-bottom lg:bg-cover lg:bg-right-top bg-no-repeat opacity-80 -z-10" style={{ backgroundImage: "url('https://res.cloudinary.com/cloudnila/image/upload/v1682558715/dionimarayogaeterapias.com.br/home-bg.png')" }}></div>
 }

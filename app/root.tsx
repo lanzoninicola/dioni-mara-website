@@ -74,12 +74,12 @@ export const meta: MetaFunction = () => {
 
 export default function App() {
   return (
-    <html lang="pt-br">
+    <html lang="pt-br" style={{ lineHeight: "inherit" }}>
       <head>
         <Meta />
         <Links />
       </head>
-      <body style={{ textRendering: "optimizeLegibility" }}>
+      <body>
         <Main>
           <Header />
           <Outlet />

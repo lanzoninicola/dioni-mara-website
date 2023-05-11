@@ -2,6 +2,7 @@
 
 ## TODO
 
+- [ ] robots.txt
 - [ ] SEO improvements
 - [ ] Add customers testimonials
 - [ ] Add page with the photos of studio
