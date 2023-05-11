@@ -35,7 +35,7 @@ export default function ServicosTerapiasHolisticas() {
     return <>
         <Container>
             <h1 className="font-bold text-4xl mb-8">Terapias Holísticas</h1>
-            <p className="md:text-xl">A terapia holística aborda a pessoa como um todo, considerando não apenas os sintomas físicos, mas também as emoções, a mente e o espírito. Ela busca equilibrar e harmonizar esses aspectos para promover a saúde e o bem-estar de forma integral.</p>
+            <p className="md:text-xl  leading-normal">A terapia holística aborda a pessoa como um todo, considerando não apenas os sintomas físicos, mas também as emoções, a mente e o espírito. Ela busca equilibrar e harmonizar esses aspectos para promover a saúde e o bem-estar de forma integral.</p>
         </Container>
         <Container>
             <div className="flex flex-col gap-4 lg:gap-8 mt-8">

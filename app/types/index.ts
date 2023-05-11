@@ -21,6 +21,7 @@ export interface Deal {
   discount: number;
   dateStart: string;
   dateEnd: string;
+  disabled: boolean;
 }
 
 export interface DealUI extends Deal {

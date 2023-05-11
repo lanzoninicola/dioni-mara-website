@@ -37,7 +37,7 @@ export default function ServicosMassagens() {
   return <>
     <Container>
       <h1 className="font-bold text-4xl mb-8">Massagens</h1>
-      <p className="md:text-xl">As terapias manuais aplicadas são personalizadas para ajudar a administrar o estresse e a dor crônica. Descubra como posso ajudar a relaxar seu corpo e sua mente.</p>
+      <p className="md:text-xl leading-normal">As terapias manuais aplicadas são personalizadas para ajudar a administrar o estresse e a dor crônica. Descubra como posso ajudar a relaxar seu corpo e sua mente.</p>
     </Container>
     <Container>
       <div className="flex flex-col gap-4 lg:gap-8 mt-8">
