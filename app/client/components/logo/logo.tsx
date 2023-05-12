@@ -2,8 +2,8 @@ import { Link } from "@remix-run/react";
 
 
 const variants = {
-  white: "/assets/images/logo-dioni-mara-yoga-terapias-white.png",
-  sky: "/assets/images/logo-dioni-mara-yoga-terapias-sky-seicento.png",
+  white: "/assets/images/logo-dioni-mara-yoga-terapias-white.webp",
+  sky: "/assets/images/logo-dioni-mara-yoga-terapias-sky-seicento.webp",
 }
 
 interface LogoProps {
