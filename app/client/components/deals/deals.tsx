@@ -29,7 +29,7 @@ interface DealBoxProps {
 function DealBox({ imageUrl, title, discount, to }: DealBoxProps) {
     return <div className=" flex flex-col bg-violet-200 rounded-xl py-6 px-4 gap-4">
         <div>
-            <img src={imageUrl} className="mb-6 rounded-md" />
+            <img src={imageUrl} className="mb-6 rounded-md" alt={`Oferta do momento: desconto ${discount}% para ${title}`} />
             <h3 className="font-extrabold flex flex-col justify-center gap-0 mb-2">
                 <span className="text-3xl leading-none"> {discount}%</span>
                 <span className="text-xl leading-none">desconto</span>
