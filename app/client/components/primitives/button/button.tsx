@@ -7,7 +7,7 @@ export default function Button({ label, onClick }: ButtonProps) {
   return (
     <button
       type="button"
-      className="text-md rounded-full bg-sky-500 py-5 px-8 font-semibold shadow-md"
+      className="text-md rounded-full bg-sky-500 py-5 px-8 font-semibold shadow-md font-body"
       onClick={onClick}
     >
       {label}

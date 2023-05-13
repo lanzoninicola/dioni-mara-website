@@ -46,7 +46,7 @@ export default function ServicosYoga() {
                         imageUrl={y.imageUrl}
                         shortDescription={y.shortDescription}
                         infoMessage={y.infoMessage}
-                        scheduleMessage={y.bookingMessage}
+                        bookingMessage={y.bookingMessage}
                     />
                 })}
 

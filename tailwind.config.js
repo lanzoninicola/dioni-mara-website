@@ -97,4 +97,10 @@ module.exports = {
     },
   },
   plugins: [require("flowbite/plugin"), require("@tailwindcss/aspect-ratio")],
+  purge: {
+    enabled: process.env.NODE_ENV === "production",
+    content: [
+      "./app/**/*.{js,ts,jsx,tsx}",
+    ],
+  }
 };
