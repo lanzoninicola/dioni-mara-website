@@ -4,6 +4,7 @@
 
 - [ ] robots.txt
 - [ ] SEO improvements
+  - [ ] for each page add meta SEO tags
 - [ ] Add customers testimonials
 - [ ] Add page with the photos of studio
 - [ ] Add about page
@@ -15,6 +16,7 @@
 - [ ] Cloudflare for DNS and CDN
 - [ ] Add a blog
 - [ ] From my social section (show the last 3 posts from instagram)
+- [ ] Using SQL LITE to store images
 
 ## Nice to have but not necessary
 
