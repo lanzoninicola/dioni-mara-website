@@ -46,7 +46,7 @@ export default function ServicosTerapiasHolisticas() {
                         imageUrl={therapy.imageUrl}
                         shortDescription={therapy.shortDescription}
                         infoMessage={therapy.infoMessage}
-                        scheduleMessage={therapy.bookingMessage}
+                        bookingMessage={therapy.bookingMessage}
                     />
                 })}
 

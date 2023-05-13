@@ -49,7 +49,7 @@ export default function ServicosMassagens() {
             imageUrl={massage.imageUrl}
             shortDescription={massage.shortDescription}
             infoMessage={massage.infoMessage}
-            scheduleMessage={massage.bookingMessage}
+            bookingMessage={massage.bookingMessage}
           />
         })}
 
